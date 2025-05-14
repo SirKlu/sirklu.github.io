@@ -111,6 +111,10 @@ body {
 
 		<script src="coco.js"></script>
 		<script>
+						let canvas = document.getElementById("canvas");
+canvas.addEventListener("click", async () => {
+  await canvas.requestPointerLock();
+});
 const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"coco","experimentalVK":false,"fileSizes":{"coco.pck":33623120,"coco.wasm":47811600},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
